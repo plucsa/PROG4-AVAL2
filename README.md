@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+PROJETADO POR :
+PEDRO LUCAS DE SOUZA RODRIGUES
+FRANCISCO EDSON DOS REIS VASCONCELOS
+AKENATHON JAMISSE BARROS FURTADO
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
