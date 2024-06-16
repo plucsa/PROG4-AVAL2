@@ -20,7 +20,10 @@ class ItemTile extends StatelessWidget {
     String formatDaysDifference(int days) {
       if (days > 0) {
         return 'Venceu há $days dia(s) atrás';
-      } else if (days > -3) {
+      } else if (days == 0){
+        return 'Vence Hoje';
+
+      }else if (days > -3) {
         return 'Restam ${days * -1} dia(s)';
       } else {
         return '${itemDate.day}/${itemDate.month}/${itemDate.year}';
@@ -48,7 +51,7 @@ class ItemTile extends StatelessWidget {
           Text(
             'Vencimento: $dateDifference',
             style: TextStyle(
-              color: isPast ? Colors.red : Colors.black,
+              color: isPast ? Colors.red : differenceInDays <= -3 ? Colors.black : Color.fromARGB(255, 247, 112, 2) ,
             ),
           ),
           Text('Categoria: ${item.category}'),

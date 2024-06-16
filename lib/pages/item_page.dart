@@ -126,7 +126,7 @@ class _ItemPageState extends State<ItemPage> {
         Provider.of<ToDoListProvider>(context, listen: true).categoryItems;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Novo Item'),
+        title: const Text('Adicionar/Alterar Item'),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
