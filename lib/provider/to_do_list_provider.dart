@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import '../models/item.dart';
 
 class ToDoListProvider with ChangeNotifier {
-  final _baseUrl = 'https://todolist-prog4-b9e62-default-rtdb.firebaseio.com';
+  final _baseUrl = 'https://todolist-prog4-b9e62-default-rtdb.firebaseio.com/';
 
   final List<Item> _listItems = [];
   final List<String> _categoryList = [

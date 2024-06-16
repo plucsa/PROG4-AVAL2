@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 
 class _HomePageState extends State<HomePage> {
-  bool _isLoading = true;
+  bool isLoading = true;
   @override
   void initState() {
     super.initState();
@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
     provider.load().then(
       (_) {
         setState(() {
-          _isLoading = false;
+          isLoading = false;
         });
       },
     );
@@ -73,6 +73,7 @@ class _HomePageState extends State<HomePage> {
               itemCount: items.length,
               itemBuilder: (context, index) => Dismissible(
                 key: GlobalKey(),
+                background: Container(color: Colors.red,),
                 confirmDismiss: (_) {
                   return showDialog<bool>(
                     context: context,
